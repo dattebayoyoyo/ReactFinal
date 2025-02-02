@@ -1,0 +1,285 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 51px 304px 263px 1fr;
+
+  max-width: 548px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 325px) {
+    grid-template-rows: 51px 304px 300px 1fr;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 40px 40px;
+
+    grid-template-rows: 460px 280px 88px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    grid-template-rows: 365px 176px 215px;
+    grid-template-columns: 1fr 350px;
+
+    max-width: 1190px;
+    padding: 126px 40px 56px 40px;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+
+  @media only screen and (min-width: 768px) {
+    grid-column: 1 / 3;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+}
+
+.planet {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.geology {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 62px;
+  height: 75px;
+
+  @media only screen and (min-width: 768px) {
+    width: 102px;
+    height: 125px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 163px;
+    height: 199px;
+  }
+}
+
+.mercury {
+  width: 111px;
+  width: 111px;
+
+  .geology {
+    top: 87.5px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 184px;
+    height: 184px;
+
+    .geology {
+      top: 145px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 290px;
+    height: 290px;
+
+    .geology {
+      top: 227px;
+    }
+  }
+}
+
+.venus {
+  width: 154px;
+  height: 154px;
+
+  .geology {
+    top: 108px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 253px;
+    height: 253px;
+
+    .geology {
+      top: 177px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 400px;
+    height: 400px;
+
+    .geology {
+      top: 280px;
+    }
+  }
+}
+
+.earth {
+  width: 173px;
+  height: 173px;
+
+  .geology {
+    top: 119px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 285px;
+    height: 285px;
+
+    .geology {
+      top: 196px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 450px;
+    height: 450px;
+
+    .geology {
+      top: 305px;
+    }
+  }
+}
+
+.mars {
+  width: 129px;
+  height: 129px;
+
+  .geology {
+    top: 95px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 213px;
+    height: 213px;
+
+    .geology {
+      top: 157px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 336px;
+    height: 336px;
+
+    .geology {
+      top: 273px;
+    }
+  }
+}
+
+.jupiter {
+  width: 224px;
+  height: 224px;
+
+  .geology {
+    top: 144px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 369px;
+    height: 369px;
+
+    .geology {
+      top: 236px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 582px;
+    height: 582px;
+
+    .geology {
+      top: 370px;
+    }
+  }
+}
+
+.saturn {
+  width: 256px;
+  height: 256px;
+
+  .geology {
+    top: 152px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 422px;
+    height: 422px;
+
+    .geology {
+      top: 250px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 675px;
+    height: 675px;
+
+    .geology {
+      top: 405px;
+    }
+  }
+}
+
+.uranus {
+  width: 176px;
+  height: 176px;
+
+  .geology {
+    top: 125px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 290px;
+    height: 290px;
+
+    .geology {
+      top: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 458px;
+    height: 458px;
+
+    .geology {
+      top: 320px;
+    }
+  }
+}
+
+.neptune {
+  width: 173px;
+  height: 173px;
+
+  .geology {
+    top: 118px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 285px;
+    height: 285px;
+
+    .geology {
+      top: 195px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 450px;
+    height: 450px;
+
+    .geology {
+      top: 305px;
+    }
+  }
+}
